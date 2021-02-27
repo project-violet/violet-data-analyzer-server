@@ -126,7 +126,7 @@ var qr = conn.query(
     'SELECT * FROM viewtotal WHERE UserAppId IS NOT NULL AND UserAppId <> "test"',
     function(error, results, fields) {
       console.log(error);
-      _build_similarity_query2(results);
+      _build_similarity_query(results);
     });
 
 module.exports = {

@@ -14,6 +14,8 @@ const expressDefend = require('express-defend');
 const blacklist = require('express-blacklist');
 const rateLimit = require('express-rate-limit');
 
+const loader = require('./loader.js');
+
 const app = express();
 
 app.disable('x-powered-by');
